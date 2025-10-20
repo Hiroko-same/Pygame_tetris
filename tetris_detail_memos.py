@@ -25,11 +25,11 @@
 #-- Window作成--
   横に余白を作成
   Tetris画面の横に余白をセットする
-  タイトルはTetriS
+  タイトルはTetris
   フォント(フォント種類は指定なし、サイズは36)
 # -- Window creation --
   Create a margin on the right side of the Tetris screen.
-  The window title is “TetriS”.
+  The window title is “Tetris”.
   Set up the font (type unspecified, size = 36).
 
 
@@ -94,7 +94,7 @@
   If the position is within the Tetris display, draw rectangles filled with CYAN to represent the block.
 
 #-- 地面を描く--
-  行と列の交差マスの座標がもし０以外で埋まった場合、そのマスに四角を設定
+  行と列の交差マスの座標が0以外の場合、そのマスに四角を描く
   ブロックをCYANで塗りつぶす
 # -- Draw the field (grounded blocks) --
   For each cell that is non-zero, draw a rectangle in that position.
@@ -102,7 +102,7 @@
 
 #-- ブロックが動けるかチェック--
   ブロックをdx,dyの位置に動かしたときのpx,py（停止している座標）を計算
-  TetriSの画面上からはみ出した時Falseを返す
+  Tetrisの画面上からはみ出した時Falseを返す
   落下時にy座標が０以上でかつ何かにぶつかった時False
   Falseを返すとcan_move()は停止
 # -- Check if the block can move --
@@ -114,13 +114,13 @@
 #--回転の為の関数--
   O型は回転しない
   90度時計回り
- （（x,y）⇒（-y,x）にしたいのでfor文のcurrent_block['shape']内座標すべてに(-py,px)を代入）
+ （（x,y）⇒（-y,x）にしたいので、for文でcurrent_block['shape']内の全ての座標に(-py,px)を代入）
   形を変えたブロックを返す
 
 # -- Function for rotation --
   The O-shaped Tetromino does not rotate.
   Rotate the block 90° clockwise.
-  For every coordinate (x, y) inside current_block['shape'], substitute it as (-y, x) to perform rotation.
+  For every coordinate (x, y) inside current_block['shape'], transform it to (-y, x) for rotation.
   Return the new shape.
 
 #--ブロックをフィールドに固定--
@@ -135,7 +135,7 @@
 #--揃った行を消す処理--
   while文外にあるfield,scoreを計算できるようにする
   もし1つでも行の中のマスが0＝空ならフィールド上の行はそのままの形で全行を埋める
-  全フィールドの行数からnew_field分の行数を引いた数字(もしマスが0なら差なし)をlines_clearedとする
+  全フィールドの行数からnew_field分の行数を引いた値(空のマスがある行は差なし)をlines_clearedとする
   scoreはlines_cleared*100とする
   lines_clearedの数字分、new_fieldの0番目に列分のマスを０で埋めたものを入れる、を繰り返す
   new_fieldをfieldとする
@@ -150,15 +150,15 @@
   Finally, set field = new_field.
 
 # -- ゲームオーバー判定--
-# 一か所でも、10列分、0以外がｘに代入されているfield[0][x]で埋まっている状態がある、というコードを返す
+#　１行目（field[0][x]）の１０列のうち、どれか１つでも０以外で埋まっている場合、ゲームオーバーと判定する
 # -- Game over condition --
   Check the top row (field[0][x]).
-  If any of the 10 cells in the top row are non-zero, return a Game Over state.
+  If any of the 10 cells in the top row (field[0][x]) are non-zero, return a Game Over state.
 
 # --次のブロック表示の文字--   
   文字はNEXT、白い文字
   スクリーン上にnext_textを表示するブロックを作成（左辺：WIDTH＋20、上辺：20）
-  次に表示するブロックの「shape」を形作る座標すべての移動先座標dx,dyの計算
+  次に表示するブロックの「shape」を構成する全ての座標について、移動先座標dx,dyを計算
   xはWIDTH+40に移動先のx座標＊マスサイズ分が加算される
   yは60＋移動先のy座標＊マスサイズ分が加算される
 # -- Display the next block text --
@@ -177,11 +177,11 @@
   Define all variables necessary to start the Tetris game.
 
 #-- メインループ--
-# イベントタイプがQUITならシステムの終了
-# キー操作
-# can_move()にcurrent_blockの['x']['y']とnew_shapeを代入し、
-# 移動座標は動かさず(dx=0,dy=0)にcurrent_blockを90度回転させる（rotate()）
-# 回転させたnew_shape（current_block）をcurrent_block['shape']に代入
+　 イベントタイプがQUITならシステムの終了
+　 キー操作
+  can_move()にcurrent_blockの['x']['y']とnew_shapeを代入し、
+  移動座標は動かさず(dx=0,dy=0)にcurrent_blockを90度回転させる（rotate()）
+  回転させたnew_shape（current_block）をcurrent_block['shape']に代入
 # -- Main loop --
   If the event type is QUIT, exit the game system.
   Keyboard operations.
@@ -191,16 +191,16 @@
 
 
 # --ゲームオーバーじゃない時--
-# 自動落下の設定にする
-# current_timeにゲーム内の時間をミリ秒で(tick)返す関数を代入
-# 最新の経過時間（ミリ秒）から最初の経過時間（ミリ秒）の差異が落下時間（500ミリ秒）より多い時、
-# can_move()にdx=0,dy=1でcurrent_blockが代入できる場合はcurrent_blockの['y']とscoreに1を加算、
-# それが代入できない時は、lock_block()を用いる
-# lock_block()にcurrent_blockを代入し、clear_lines()で揃った行を消す
-# もし一か所でも、10列分、0以外がｘに代入されているfield[0][x]で埋まっている状態がある、場合
-# gameover=Trueを返す
-# それ以外のときはゲーム初期化に必要な変数を代入
-# 1つのブロックの処理が終わったら、last_fall_timeを更新（current_timeをlast_fall_timeに代入）
+  自動落下の設定にする
+  current_timeにゲーム内の時間をミリ秒で(tick)返す関数を代入
+  最新の経過時間（ミリ秒）から最初の経過時間（ミリ秒）の差異が落下時間（500ミリ秒）より多い時、
+  can_move()にdx=0,dy=1でcurrent_blockが代入できる場合はcurrent_blockの['y']とscoreに1を加算、
+  それが代入できない時は、lock_block()を用いる
+  lock_block()にcurrent_blockを代入し、clear_lines()で揃った行を消す
+  １行目（field[0][x]）の１０列のうち、どれか１つでも０以外で埋まっている場合
+  gameover=Trueを返す
+  それ以外のときはゲーム初期化に必要な変数を代入
+  1つのブロックの処理が終わったら、last_fall_timeを更新（current_timeをlast_fall_timeに代入）
 # -- When the game is not over --
   Enable automatic falling of blocks.
   Assign current_time to the current game time in milliseconds (using tick()).
@@ -217,7 +217,7 @@
 # gridやfieldが描かれる
 # ゲームオーバーでない時はdraw_block()にcurrent_blockを代入して最新のブロックを画面上に描く
 # score表示、文字表示に必要な要素は「表示したいテキストScore:スコア数、ゲームオーバーじゃない時True、白色」
-# f-stringsはf{}の中に変数やpythonの式を直接埋め込める機能
+# f-stringsはf{}内に変数やPythonの式を直接埋め込める機能
 # 画面上にscore_textを入れる画面を作成（左辺：WIDTH＋20、上辺：HEIGHT-50）
 # NEXTブロックを本体画面横に表示させる（draw_next_block()にnext_blockを代入）
 # -- During the game (main display loop) --
@@ -249,4 +249,5 @@
   Use pygame.display.flip() to refresh the entire screen created by pygame.display.set_mode().
   Limit the screen refresh rate to a maximum of 60 frames per second,
   to prevent the game from running too fast.
+
 
