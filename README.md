@@ -48,6 +48,8 @@ into separate files, and improving readability by writing documentation in Engli
 ----
 
 ## Game Screenshot
+| Game Playing | Game Over |
+| -------------| --------- |
 | ![Tetris Screenshot](./tetris1.PNG) |
  ![Tetris Screenshot](./tetris2.PNG) |
 
