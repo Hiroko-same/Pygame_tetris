@@ -50,8 +50,8 @@ into separate files, and improving readability by writing documentation in Engli
 ## Game Screenshot
 | Game Playing | Game Over |
 | -------------| --------- |
-| ![Tetris Screenshot](./tetris1.PNG) |
- ![Tetris Screenshot](./tetris2.PNG) |
+| ![Tetris Screenshot](./tetrisPlaying.PNG) |
+ ![Tetris Screenshot](./tetris_Game Over.PNG) |
 
 
 ----
@@ -145,8 +145,11 @@ This rewards both persistence and success, keepin motivation high.
 ----
 
 ## スクリーンショット画像
-![Tetris Screenshot](./tetris1.png)
-![Tetris Screenshot](./tetris2.png)
+| Game Playing | Game Over |
+| -------------| --------- |
+| ![Tetris Screenshot](./tetrisPlaying.PNG) |
+ ![Tetris Screenshot](./tetris_Game Over.PNG) |
+
 
 
 ----
