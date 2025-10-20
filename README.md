@@ -1,6 +1,6 @@
-# Pygame_tetris
+# Pygame_Tetris
 #  English
-## Project"TetriS" Overview
+## Project"Tetris" Overview
 This game was developed to learn and understand Pygame,
 as well as to enjoy playing it during my free time.
 
@@ -50,14 +50,14 @@ into separate files, and improving readability by writing documentation in Engli
 ## Game Screenshot
 | Game Playing | Game Over |
 |:-------------:|:----------:|
-| <img src="./tetris_Playing.PNG" width="300"/> | <img src="./tetris_GameOver.PNG" width="300"/> |
+| <img src="./Tetris_Playing.PNG" width="300"/> | <img src="./Tetris_GameOver.PNG" width="300"/> |
 
 
 ----
 
 ## How to Run
 Start the game by running the command below:
-python tetris_main.py
+python Tetris_main.py
  
 
 ----
@@ -99,7 +99,7 @@ This rewards both persistence and success, keepin motivation high.
 ------------------------------------------------------------------------------
 
 #  日本語
-## プロジェクト”TetriS”概要
+## プロジェクト”Tetris”概要
 このゲームはPygameを学び理解するために開発しました。
 また分の自由時間に楽しく遊ぶために開発しました。
 必要なPythonやPygameの関数を自ら調べ、
@@ -146,7 +146,7 @@ This rewards both persistence and success, keepin motivation high.
 ## スクリーンショット画像
 | Game Playing | Game Over |
 |:-------------:|:----------:|
-| <img src="./tetris_Playing.PNG" width="300"/> | <img src="./tetris_GameOver.PNG" width="300"/> |
+| <img src="./Tetris_Playing.PNG" width="300"/> | <img src="./Tetris_GameOver.PNG" width="300"/> |
 
 
 
@@ -155,7 +155,7 @@ This rewards both persistence and success, keepin motivation high.
 ## 起動方法
 このファイルから起動してゲームをはじめよう:
 
-"python tetris_main.py"
+"python Tetris_main.py"
  
 
 ----
