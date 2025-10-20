@@ -57,7 +57,7 @@ into separate files, and improving readability by writing documentation in Engli
 
 ## How to Run
 Start the game by running the command below:
-python Tetris_main.py
+python main.py
  
 
 ----
@@ -155,7 +155,7 @@ This rewards both persistence and success, keepin motivation high.
 ## 起動方法
 このファイルから起動してゲームをはじめよう:
 
-"python Tetris_main.py"
+"python main.py"
  
 
 ----
