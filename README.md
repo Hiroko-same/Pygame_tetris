@@ -49,7 +49,7 @@ into separate files, and improving readability by writing documentation in Engli
 
 ## Game Screenshot
 | Game Playing | Game Over |
-| -------------| --------- |
+| ------------ | --------- |
 | ![Tetris Screenshot](./tetrisPlaying.PNG) |
  ![Tetris Screenshot](./tetris_Game Over.PNG) |
 
