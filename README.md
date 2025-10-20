@@ -50,8 +50,8 @@ into separate files, and improving readability by writing documentation in Engli
 ## Game Screenshot
 | Game Playing | Game Over |
 |:------------:|:---------:|
-| ![Tetris Playing](./tetris_Playing.PNG) 
-| ![Tetris Game Over](./tetris_GameOver.PNG) |
+| <img src="./tetris_Playing.PNG" width="300"/> 
+| <img src="./tetris_GameOver.PNG" width="300"/> |
 
 
 ----
