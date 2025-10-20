@@ -49,9 +49,8 @@ into separate files, and improving readability by writing documentation in Engli
 
 ## Game Screenshot
 | Game Playing | Game Over |
-|:------------:|:---------:|
-| <img src="./tetris_Playing.PNG" width="300"/> |
-| <img src="./tetris_GameOver.PNG" width="300"/> |
+|:-------------:|:----------:|
+| <img src="./tetris_Playing.PNG" width="300"/> | <img src="./tetris_GameOver.PNG" width="300"/> |
 
 
 ----
