@@ -56,7 +56,7 @@ into separate files, and improving readability by writing documentation in Engli
 ----
 
 ## How to Run
-Start the game by running the command below:
+Start the game by running the command:
 python main.py
  
 
