@@ -48,8 +48,8 @@ into separate files, and improving readability by writing documentation in Engli
 ----
 
 ## Game Screenshot
-![Tetris Screenshot](./images/tetris1.png)
-![Tetris Screenshot](./images/tetris2.png)
+![Tetris Screenshot](./tetris1.png)
+![Tetris Screenshot](./tetris2.png)
 
 
 ----
@@ -143,8 +143,8 @@ This rewards both persistence and success, keepin motivation high.
 ----
 
 ## スクリーンショット画像
-![Tetris Screenshot](./images/tetris1.png)
-![Tetris Screenshot](./images/tetris2.png)
+![Tetris Screenshot](./tetris1.png)
+![Tetris Screenshot](./tetris2.png)
 
 
 ----
@@ -191,4 +191,3 @@ This rewards both persistence and success, keepin motivation high.
 - プレイヤーの過去最高得点を表示する画面を加える。
 - 壁に近いブロックの回転時のロジックを加える。
 - 背景にBGMを流したい。
-
