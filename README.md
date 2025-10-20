@@ -68,7 +68,7 @@ python Tetris_main.py
 ・Then I transelated all notes in english.
 ・These notes were originality for my own understanding, 
   but I later rewrote and organazed them for better readability.
-・Additional reference notes for self-study are stored in the folder"     ". 
+・Additional reference notes for self-study are stored in the folder"tetris_detail_memos". 
 
 
 ----
@@ -166,7 +166,7 @@ This rewards both persistence and success, keepin motivation high.
 ・次にすべてのメモを英語に翻訳した
 ・メモはわたしがゲームのコードを理解するために独自の書きかたをした 
   しかし後からほかの人も見やすく書き直し整理した
-・わたしが理解するために作った追加のメモは"     "フォルダに入っている. 
+・わたしが理解するために作った追加のメモは"tetris_detail_memos"フォルダに入っている. 
 
 
 ----
