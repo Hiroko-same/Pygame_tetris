@@ -73,7 +73,7 @@ python main.py
 
 ----
 
-## Gane Design Ideas
+## Game Design Ideas
 **Block color: 
 I chose cyan for the tetriminos.
 Cyan is a calming color that helps players stay relaxed,
