@@ -56,12 +56,15 @@ into separate files, and improving readability by writing documentation in Engli
 ----
 
 ## How to Run
-This Tetris game is built with **Python** and **Pygame**.  
+This Tetris game is built with *Python* and *Pygame*.  
 You don't need Anaconda to play — as long as you have Python installed, you're good to go! 🚀  
 
 Start the game by running the command:
 python main.py
  
+**Requirements**
+- Python 3.8 or higher
+- pygame library (`pip install pygame`)
 
 ----
 
@@ -157,12 +160,14 @@ This rewards both persistence and success, keepin motivation high.
 
 ## 起動方法
 PythonとPygameを使って作られたシンプルなテトリスゲームです。  
-**Anacondaは不要**で、Pythonさえ入っていればどの環境からでも実行できます。
-
+*Anacondaは不要*で、Pythonさえ入っていればどの環境からでも実行できます。
 このファイルから起動してゲームをはじめよう:
 
 "python main.py"
- 
+
+ **必須**
+- Python 3.8 かそれ以上
+- pygame library (`pip install pygame`と書けばPygame libraryがインストールされます)
 
 ----
 
