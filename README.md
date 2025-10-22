@@ -107,7 +107,7 @@ This rewards both persistence and success, keepin motivation high.
 #  日本語
 ## プロジェクト”Tetris”概要
 このゲームはPygameを学び理解するために開発しました。
-また分の自由時間に楽しく遊ぶために開発しました。
+また自分の自由時間に楽しく遊ぶために開発しました。
 必要なPythonやPygameの関数を自ら調べ、
 わからない部分は分解して理解し、再構築しました。
 
