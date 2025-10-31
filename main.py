@@ -62,7 +62,7 @@ shape = current_block['shape']
 
 # -- Main loop --
 # Call can_move() with current_block['x'], current_block['y'], and new_shape.
-# If rotation is triggered, keep the position fixed (dx = 0, dy = 0) and rotate current_block by 90Åã using rotate().
+# If rotation is triggered, keep the position fixed (dx = 0, dy = 0) and rotate current_block by 90¬Å‚Äπ using rotate().
 # Then assign the rotated new_shape to current_block['shape'].
 while True:
     for event in pygame.event.get():
@@ -117,7 +117,7 @@ while True:
     functions.draw_next_block(next_block, font, screen, WIDTH, WHITE,cell_size, CYAN)
 
 # -- Game Over display --
-# When the game is over, display the text: ÅgGAME OVERÅh in white.
+# When the game is over, display the text: ¬ÅgGAME OVER¬Åh in white.
 
     if game_over:
         over_text = font.render("Game Over", True, WHITE)
@@ -129,4 +129,6 @@ while True:
 
     pygame.display.flip()  
 
+
     clock.tick(60)    
+
